@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "pm2 start server.js --watch --ignore-watch='node_modules'",
-    "stop": "pm2 stop server.js"
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/teejay74/backend-http"
   },
-  "author": "coursar",
+  "author": "Teejay74",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/teejay74/backend-http/issues"
