@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm install",
     "start": "pm2 start server.js --watch --ignore-watch='node_modules'",
     "stop": "pm2 stop server.js"
   },
